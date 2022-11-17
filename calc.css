@@ -1,0 +1,147 @@
+/* reset */
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--mainblack);
+  background-color: var(--bodycolor);
+  position: relative;
+  font-size: 1.8rem;
+}
+
+:root {
+  --primarycolor: #601495;
+  --primary2color: #c8a5e1;
+
+  --secandrycolor: #ede9fe;
+  --mainwhite: #fff;
+  --mainblack: #222;
+  --maingray: #7c7c7c;
+  --mainspacing: 0.1rem;
+  --maintrasition: all 0.3s linear;
+  --mainred: #db2777;
+  --bodycolor: #f6f6f6;
+}
+
+header {
+  background-color: var(--primarycolor);
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.calculat {
+  /* background-color: var(--mainred); */
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+section {
+  display: block;
+  width: 100%;
+}
+.calc {
+  margin-top: 2rem;
+  background-color: var(--mainblack);
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  overflow: hidden;
+  /* padding: 2rem; */
+}
+/* display */
+.display {
+  width: auto;
+  height: 20rem;
+  background-color: var(--mainblack);
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+input {
+  border: none;
+  background-color: var(--mainblack);
+  width: 350px;
+  height: 80px;
+  border-radius: 1rem;
+  font-size: 2.8rem;
+  padding: 1rem 5rem;
+  color: #fff;
+  border: 3px solid var(--primarycolor);
+
+}
+
+input:focus {
+  outline: 0;
+  border: 3px solid var(--primarycolor);
+}
+/* keys */
+.clear {
+  height: 10rem;
+  margin-left: 1rem;
+  border: 1px solid black;
+  padding: 2rem;
+  background-color: var(--mainwhite);
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.keys {
+  /* background-color:var(--mainred); */
+  display: grid;
+  grid-template-rows:  repeat(4, 50px);
+  grid-template-columns: repeat(4, 50px);
+  column-gap: 4rem;
+  row-gap: 1rem;
+  width: 400px;
+  /* margin: 1rem; */
+  /* border-top: 1px solid black;
+  border-left: 1px solid black; */
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+  height: auto;
+  margin: 2rem;
+}
+.keys div {
+  background-color: var(--primary2color);
+  color: var(--primarycolor);
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.3rem;
+}
+/* .equal {
+  grid-column: 4/5;
+  grid-row: 4/6;
+  text-align: center;
+} */
